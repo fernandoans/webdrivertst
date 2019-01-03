@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">48,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">example.NewTest</td><td><a href="#m1"><b>beforeTest</b>  </a></td><td class="numi">1</td><td>1546455654789</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1546455703698</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">example.NewTest</td><td><a href="#m3"><b>myTest</b>  </a></td><td class="numi">1</td><td>1546455703694</td><td class="numi">1</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">example.NewTest:beforeTest</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(/usr/bin/firefox) on port 7055; process output follows: 
+	Loading bootstrap scope from /usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org.xpi
+1546455658552	addons.xpi	DEBUG	Calling bootstrap method startup on langpack-pt-BR@firefox.mozilla.org version 64.0
+1546455658553	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org.xpi
+1546455658553	addons.xpi	DEBUG	Calling bootstrap method startup on langpack-pt-PT@firefox.mozilla.org version 64.0
+1546455658553	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/features/screenshots@mozilla.org.xpi
+1546455658554	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546455658554	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/features/webcompat@mozilla.org.xpi
+1546455658554	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546455658555	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546455658556	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546455658556	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Starting provider: GMPProvider
+1546455658557	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546455658557	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546455658557	addons.manager	DEBUG	Starting provider: PluginProvider
+1546455658557	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546455658558	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546455658560	addons.manager	DEBUG	Completed startup sequence
+
+(firefox:16964): Gtk-WARNING **: 17:00:58.663: Theme parsing error: &lt;data&gt;:1:31: Expected &apos;)&apos; in color definition
+
+(firefox:16964): Gtk-WARNING **: 17:00:58.663: Theme parsing error: &lt;data&gt;:1:75: Expected &apos;)&apos; in color definition
+1546455659891	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous5795860199391908305webdriver-profile/extensions.json
+1546455659910	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: /tmp/anonymous5795860199391908305webdriver-profile/extensions/webdriver-staging
+1546455659911	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-pt-PT@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-CA@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-pt-BR@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-GB@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-ZA@firefox.mozilla.org in app-global
+1546455659913	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1546455660042	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+*** Blocklist::_loadFileInternal: blocklist is disabled
+1546455660147	addons.xpi-utils	DEBUG	Successfully read XPI database
+1546455660260	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546455679950	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/64.0/20181207224759/Linux_x86_64-gcc3/null/release-cck-ubuntu/Linux%204.18.0-13-generic%20(GTK%203.24.1%2Clibpulse%2012.2.0)/canonical/1.0/update.xml
+1546455680810	addons.productaddons	INFO	Completed downloading document
+1546455682238	addons.productaddons	INFO	downloadXHR File download. status=200
+1546455682295	addons.productaddons	INFO	Downloaded file will be saved to /tmp/tmpaddon-983152
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;fernando-inspiron-5537&apos;, ip: &apos;10.19.2.234&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.18.0-13-generic&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.NewTest.beforeTest(NewTest.java:24)
+<br/>23 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+	Loading bootstrap scope from /usr/lib/firefox/browser/extensions/langpack-pt-BR@firefox.mozilla.org.xpi
+1546455658552	addons.xpi	DEBUG	Calling bootstrap method startup on langpack-pt-BR@firefox.mozilla.org version 64.0
+1546455658553	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/extensions/langpack-pt-PT@firefox.mozilla.org.xpi
+1546455658553	addons.xpi	DEBUG	Calling bootstrap method startup on langpack-pt-PT@firefox.mozilla.org version 64.0
+1546455658553	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/features/screenshots@mozilla.org.xpi
+1546455658554	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546455658554	addons.xpi	DEBUG	Loading bootstrap scope from /usr/lib/firefox/browser/features/webcompat@mozilla.org.xpi
+1546455658554	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546455658555	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546455658556	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546455658556	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546455658556	addons.manager	DEBUG	Starting provider: GMPProvider
+1546455658557	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546455658557	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546455658557	addons.manager	DEBUG	Starting provider: PluginProvider
+1546455658557	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546455658558	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546455658560	addons.manager	DEBUG	Completed startup sequence
+
+(firefox:16964): Gtk-WARNING **: 17:00:58.663: Theme parsing error: &lt;data&gt;:1:31: Expected &apos;)&apos; in color definition
+
+(firefox:16964): Gtk-WARNING **: 17:00:58.663: Theme parsing error: &lt;data&gt;:1:75: Expected &apos;)&apos; in color definition
+1546455659891	addons.xpi-utils	DEBUG	Starting async load of XPI database /tmp/anonymous5795860199391908305webdriver-profile/extensions.json
+1546455659910	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: /tmp/anonymous5795860199391908305webdriver-profile/extensions/webdriver-staging
+1546455659911	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546455659911	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-pt-PT@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-CA@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-pt-BR@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-GB@firefox.mozilla.org in app-global
+1546455659912	addons.xpi	DEBUG	Existing add-on langpack-en-ZA@firefox.mozilla.org in app-global
+1546455659913	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1546455660042	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+*** Blocklist::_loadFileInternal: blocklist is disabled
+1546455660147	addons.xpi-utils	DEBUG	Successfully read XPI database
+1546455660260	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1546455679950	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/64.0/20181207224759/Linux_x86_64-gcc3/null/release-cck-ubuntu/Linux%204.18.0-13-generic%20(GTK%203.24.1%2Clibpulse%2012.2.0)/canonical/1.0/update.xml
+1546455680810	addons.productaddons	INFO	Completed downloading document
+1546455682238	addons.productaddons	INFO	downloadXHR File download. status=200
+1546455682295	addons.productaddons	INFO	Downloaded file will be saved to /tmp/tmpaddon-983152
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.NewTest.beforeTest(NewTest.java:24)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">example.NewTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">example.NewTest:myTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
