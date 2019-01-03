@@ -20,7 +20,7 @@ public class NewTest {
   
   @BeforeTest
   public void beforeTest() {
-	  // System.setProperty("webdriver.gecko.driver", "/home/fernando/Aplicativos/geckodriver");
+	  System.setProperty("webdriver.gecko.driver", "geckodriver");
 	  driver = new FirefoxDriver();
   }
 
